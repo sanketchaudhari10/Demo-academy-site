@@ -1,0 +1,531 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+header {
+  background-image: url("images/background.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  /* margin-right: 3%; */
+}
+#logo {
+  margin-left: 3%;
+  margin-top: 1%;
+}
+
+.header-text {
+  margin: 8% 6%;
+  max-width: 23%;
+}
+.header-text p {
+  margin: 2%;
+  letter-spacing: 3px;
+}
+.common-btn {
+  outline: none;
+  font-weight: bold;
+  border: 2px solid #f67c92;
+  padding: 3% 10%;
+}
+.header-text .common-btn {
+  margin: 2%;
+}
+nav li {
+  list-style-type: none;
+}
+nav li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  padding-left: 6%;
+}
+.sidebar {
+  height: 100vh;
+  width: 250px;
+  position: fixed;
+  top: 0px;
+  right: -250px;
+  background-color: #dbb4bb;
+  /* display: none; */
+  z-index: 2;
+  transition: all 1s ease-in-out 0.1s;
+}
+nav ul {
+  position: relative;
+  top: 15%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  align-items: stretch;
+}
+#menu {
+  height: 6%;
+  width: 4%;
+  position: fixed;
+  top: 6%;
+  right: 4%;
+  z-index: 2;
+  cursor: pointer;
+}
+
+/* about */
+
+.about,
+.offer {
+  display: flex;
+  align-items: center;
+  margin: 3.3rem 0;
+}
+.about .left,
+.offer .left {
+  flex-basis: 50%;
+}
+.about .left img,
+.offer .left img {
+  width: 100%;
+}
+.about .right,
+.offer .right {
+  flex-basis: 50%;
+  max-width: 45%;
+  text-align: right;
+  margin-right: 1rem;
+}
+.about .right h1,
+.offer .right h1 {
+  /* align-self: center; */
+  /* text-align: center; */
+  margin: 1rem 1rem 2rem 1rem;
+  font-size: 2.5rem;
+}
+.about .right p,
+.offer .right p {
+  font-size: larger;
+}
+.about .right h2,
+.offer .right h2 {
+  text-align: right;
+  margin: 1rem;
+}
+
+/* features */
+.features {
+  margin: 10rem 4rem;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 3.3rem auto;
+}
+.features .cols {
+  flex-basis: 30%;
+  /* text-align: center; */
+  /* display: inline-block; */
+}
+.features img {
+  display: block;
+  width: 50%;
+  margin: auto;
+}
+.features .cols h4 {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.features .cols p {
+  text-align: center;
+}
+.features .common-btn {
+  display: block;
+  width: 200px;
+  margin: 3rem auto;
+  padding: 1rem;
+}
+
+/* courses */
+.courses {
+  margin: 6rem auto;
+  width: 100%;
+}
+.ccontainer {
+  display: flex;
+  margin: 2rem;
+}
+.cleft {
+  flex-basis: 50%;
+  align-self: center;
+  /* padding: 2rem; */
+}
+.cleft .ctext {
+  text-align: left;
+  margin: 2rem;
+  max-width: 80%;
+}
+.ctext h1 {
+  margin: 1rem;
+}
+.ctext p {
+  margin: 2rem 1rem 1rem 1rem;
+}
+.ctext .common-btn {
+  margin-top: 0;
+  margin-left: 1rem;
+  padding: 2% 5%;
+  width: 30%;
+}
+.cright {
+  flex-basis: 50%;
+  align-self: center;
+}
+.cright img {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+
+/* offer */
+.offer .common-btn {
+  padding: 2% 8%;
+  margin-top: 2%;
+  font-size: 1.2rem;
+}
+/* offer css along with about  */
+
+/* contact */
+.contact {
+  margin: 5rem 1rem;
+}
+.contact-row {
+  display: flex;
+  align-items: center;
+}
+.contact-left {
+  padding: 4rem 2rem;
+  margin: 3rem;
+  flex-basis: 35%;
+  text-align: center;
+  border: 2px solid #f67c92;
+  border-radius: 2rem;
+  box-shadow: 0.2rem 0.2rem 0.5rem #f67c92;
+}
+.contact-left #letsp {
+  letter-spacing: 3px;
+  font-size: larger;
+}
+.contact-right {
+  flex-basis: 65%;
+}
+.contact-right img {
+  width: 100%;
+  /* padding: 1rem; */
+}
+
+form {
+  margin: 2rem 0px;
+}
+form input {
+  width: 80%;
+  height: 2rem;
+  margin: 1rem;
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+.contactbtns {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.contact-left .common-btn {
+  /* width: 45%; */
+  margin: 2%;
+  border-radius: 9px;
+}
+
+/* footer */
+footer {
+  border-top: 1px solid #f67c92;
+  box-sizing: border-box;
+}
+footer small {
+  font-weight: lighter;
+}
+.footer-row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.footer-left-col {
+  flex-basis: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2% 1%;
+  /* margin: 2% 1%; */
+  line-height: 1rem;
+}
+
+.footer-left-col h4 {
+  margin-bottom: 1.2rem;
+  color: #f67c92;
+}
+.footer-right-col {
+  flex-basis: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 1.2rem;
+}
+.copy-text {
+  align-self: flex-end;
+  padding: 2% 1%;
+}
+.flogo {
+  align-self: right;
+  align-self: flex-start;
+}
+
+/* Social icons */
+.social-icons {
+  /* background-color: ; */
+  position: fixed;
+  top: 50%;
+  left: 0;
+
+  width: 50px;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+.social-icons img {
+  cursor: pointer;
+  display: block;
+  width: 20px;
+  margin: 0 auto 20px;
+}
+
+@media only screen and (max-width: 660px) {
+  header {
+    background-image: none;
+  }
+  #logo {
+    margin-left: 12%;
+    margin-top: 1%;
+  }
+
+  .header-text {
+    margin: 27% auto;
+    max-width: 62%;
+  }
+  .header-text p {
+    margin: 5% 2%;
+    letter-spacing: 3px;
+  }
+  .common-btn {
+    outline: none;
+    font-weight: bold;
+    border: 2px solid #f67c92;
+    padding: 3% 10%;
+  }
+  .header-text .common-btn {
+    margin: 2%;
+  }
+  #menu {
+    /* height: 6%; */
+    width: 11%;
+    /* position: fixed; */
+    top: 7%;
+    /* transform: translateY(-8%); */
+    right: 17%;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  /* about */
+  .about,
+  .offer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
+  }
+  .about .left,
+  .offer .left {
+    flex-basis: 100%;
+    /* max-width: 80%; */
+  }
+  .about .left img {
+    width: 112%;
+  }
+  .about .right,
+  .offer .right {
+    flex-basis: 100%;
+    max-width: 80%;
+  }
+  .about .right h1,
+  .offer .right h1 {
+    /* align-self: center; */
+    /* text-align: center; */
+    margin: 1rem 1rem 2rem 1rem;
+    font-size: 2em;
+  }
+  /* features */
+  .features {
+    margin: 5rem 3rem;
+  }
+  .row {
+    align-items: baseline;
+    margin: 2% 1%;
+  }
+  .row .cols {
+    margin: 5% 2%;
+  }
+  .features .common-btn {
+    width: 115px;
+    margin: 1rem auto;
+    padding: 1rem;
+  }
+  /* courses */
+  .ccontainer {
+    flex-direction: column;
+    /* margin: 2rem; */
+  }
+  .ctext .common-btn {
+    margin: auto;
+
+    width: 45%;
+    display: block;
+  }
+  /* offer */
+  .offer .left img {
+    width: 105%;
+  }
+  .offer .common-btn {
+    margin-top: 6%;
+    font-size: 1rem;
+  }
+  /* contact */
+  .contact {
+    margin: 4rem 1rem;
+  }
+  .contact-row {
+    flex-direction: column-reverse;
+  }
+  .contact-left,
+  .contact-right {
+    flex-basis: 100%;
+    margin: 1rem;
+  }
+  /* form {
+  margin: 2rem 0px;
+} */
+  form input {
+    width: 95%;
+    display: block;
+    height: 1rem;
+    margin: 1rem auto;
+    border-radius: 10px;
+    padding: 0.5rem;
+  }
+  .contactbtns {
+    margin-bottom: 1rem;
+  }
+  .contact-left .common-btn {
+    /* width: 45%; */
+    margin: 2%;
+  }
+  /* footer */
+  .footer-left-col,
+  .footer-right-col {
+    flex-basis: 100%;
+  }
+  .footer-left-col {
+    margin-top: 2rem;
+  }
+  .flink {
+    flex-basis: 50%;
+    text-align: center;
+    margin-bottom: 2em;
+  }
+}
+/* @media only screen and (max-width: 660px) and (orientation: landscape) {
+  .header-text {
+    margin: 14% auto;
+    max-width: 62%;
+  }
+  #menu {
+    height: 10%;
+    width: 8%;
+    
+    top: 7%;
+    
+    right: 17%;
+    z-index: 2;
+    cursor: pointer;
+  } */
+/* .about {
+    margin-top: 13rem;
+  } */
+/* .about .left {
+    display: none;
+  } */
+/* } */
+@media only screen and (max-height: 400px) {
+  header {
+    background-image: none;
+  }
+  #logo {
+    margin-left: 12%;
+    margin-top: 1%;
+  }
+
+  .header-text {
+    margin: 8% auto;
+    max-width: 62%;
+  }
+  #menu {
+    height: 10%;
+    width: 8%;
+
+    top: 7%;
+
+    right: 17%;
+    z-index: 2;
+    cursor: pointer;
+  }
+  .common-btn {
+    outline: none;
+    font-weight: bold;
+    border: 2px solid #f67c92;
+    padding: 3% 10%;
+  }
+  .header-text .common-btn {
+    margin: 2%;
+  }
+  .about .left {
+    margin-top: 2rem;
+    height: 400px;
+  }
+  .offer .left .img {
+    height: auto;
+  }
+  .footer-left-col,
+  .footer-right-col {
+    flex-basis: 100%;
+  }
+  .footer-left-col {
+    margin-top: 2rem;
+  }
+  .flink {
+    flex-basis: 50%;
+    text-align: center;
+    margin-bottom: 2em;
+  }
+}
